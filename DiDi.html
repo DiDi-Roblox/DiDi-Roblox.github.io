@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>DiDi</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Electron - A Roblox Exploit">
+    <meta name="keywords" content="roblox, exploit, rice, green, electron">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+    <link href="DiDi_files/css.css" rel="stylesheet">
+    <link rel="stylesheet" href="DiDi_files/bootstrap.min.css">
+    <link rel="stylesheet" href="DiDi_files/owl.carousel.min.css">
+    <link href="DiDi_files/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/KimasDimas/DiDi-Roblox.github.io/main/canvas(1).ico">
+    <script type="text/javascript" id="www-widgetapi-script" src="DiDi_files/www-widgetapi.js" async=""></script><script src="DiDi_files/61915796ee.js" crossorigin="anonymous" type="text/javascript"></script><style media="all" id="fa-v4-font-face">/*!
+    <style>
+        d img {
+            vertical-align: middle;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+    </style>
+    <script src="DiDi_files/iframe_api" type="text/javascript"></script>
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="30">
+    <div class="nav-menu fixed-top is-scrolling">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-dark navbar-expand-lg">
+                        <a
+                            <h6 class="img-fluid" alt="logo">DiDi</h6>
+                        </a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                        <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item"> <a class="nav-link active" href="#home">HOME <span class="sr-only">(current)</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#features">FEATURES</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#faq">FAQ</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#download">DOWNLOAD</a> </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="bg-gradient" id="home">
+        <div class="container mt-5">
+            <h1>DiDi</h1>
+        </div>
+        <br>
+        <script type="text/javascript">
+            var player;
+
+            function onYouTubePlayerAPIReady() {
+                player = new YT.Player('player', {
+                    height: '10',
+                    width: '10',
+                    videoId: 'kA1zmr6XUoU',
+                    events: {
+                        'onStateChange': onPlayerStateChange
+                    }
+                });
+                console.log(player)
+            }
+
+            var isplaying = false
+
+            function onPlayerStateChange(event) {
+                if (event.data == YT.PlayerState.PLAYING) {
+                    isplaying = true
+                    console.log(isplaying)
+                } else if (event.data == YT.PlayerState.PAUSED) {
+                    isplaying = false;
+                }
+            }
+
+
+            var slideIndex = 1;
+            showSlides();
+
+            function showSlides() {
+                if (slideIndex == 3 && isplaying) {
+                    setTimeout(showSlides, 3500)
+                    return;
+                }
+                var i;
+                var dots = document.getElementsByClassName("dot");
+                document.getElementById("slide1").style.display = "none";
+                document.getElementById("slide2").style.display = "none";
+                document.getElementById("slide3").style.display = "none";
+                slideIndex++;
+                if (slideIndex > 4) {
+                    slideIndex = 2
+                }
+
+                if (isplaying && slideIndex != 3) {
+                    slideIndex = 3;
+                }
+
+                document.getElementById("dot1").style.backgroundColor = "#bbb";
+                document.getElementById("dot2").style.backgroundColor = "#bbb";
+                document.getElementById("dot3").style.backgroundColor = "#bbb";
+                document.getElementById(`slide${slideIndex-1}`).style.display = "block";
+                document.getElementById(`dot${slideIndex-1}`).style.backgroundColor = "#717171";
+
+                setTimeout(showSlides, 3500); // Change image every 2 seconds
+            }
+        </script>
+		<div style="height:100px; width:100%"></div>
+    </header>
+    <div class="section light-bg" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h3>Features</h3>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="card features">
+                        <div class="card-body">
+                            <div class="media">
+                                <span class="ti-face-smile gradient-fill ti-3x mr-3"></span>
+                                <div class="media-body">
+                                    <h4 class="card-title">Stability</h4>
+                                    <p class="card-text">With stability as a priority, DiDi is able to execute most scripts flawlessly without any crashes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card features">
+                        <div class="card-body">
+                            <div class="media">
+                                <span class="ti-face-smile gradient-fill ti-3x mr-3"></span>
+                                <div class="media-body">
+                                    <h4 class="card-title">Simple UI</h4>
+                                    <p class="card-text">With the simple-to-use User Interface, navigating around the UI won't be much of a hassle</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="section" id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h3>Frequently Asked Questions</h3>
+            </div>
+            <div class="row pt-4">
+                <div class="col-md-6">
+                    <h4 class="mb-3">Is this exploit trustable?</h4>
+                    <p class="light-font mb-5">For the most part, we can assure you that DiDi is 99.9% trustable and is safe to use</p>
+                    <h4 class="mb-3">Can DiDi execute any scripts?</h4>
+                    <p class="light-font mb-5">Yes! We are certain that DiDi is capable of executing majority of scripts you wish to use.</p>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="mb-3">Can this run on any versions of Windows?</h4>
+                    <p class="light-font mb-5">DiDi is able to run on Windows 10 computers.</p>
+                    <h4 class="mb-3">Will this stay free?</h4>
+                    <p class="light-font mb-5">Yes, DiDi will always stay free.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section light-bg" id="download">
+        <div class="container">
+            <div class="call-to-action">
+                <div class="box-icon"><span class="ti-mobile gradient-fill ti-3x"></span></div>
+                <h2>Download</h2>
+                <p class="tagline">You can download DiDi by clicking the <b>download</b> button below.</p>
+                <div class="my-4">
+                    <a href="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1Rxx802BFGMiP8VJ1az7WerIw_YciCKbO" target="_blank" class="btn btn-light">Download</a>
+                </div>
+        </div>
+    </div>
+    <script src="DiDi_files/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="DiDi_files/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="DiDi_files/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="DiDi_files/script.js" type="text/javascript"></script>
+<div style="height:150px; width:100%"></div>
+</html>
